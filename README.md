@@ -18,13 +18,11 @@ Or install it yourself as:
 
     $ gem install google_map_pb_parser
 
-## Aobut pb
+## Structure of pb
 
 ```
 pb = '!1m18!1m12!1m3!1d3717.560901381966!2d99.5956620927018!3d21.288842013619135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d4417bb9d2cb77:0x3aa5ca84cbdd9e7d!2sStanding%20Buddha!5e0!3m2!1sja!2sth!4v1576440979089!5m2!1sja!2sth'
 ```
-
-Structure is below
 
 ```
 !1m18
