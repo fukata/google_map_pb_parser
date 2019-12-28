@@ -22,9 +22,9 @@ module GoogleMapPbParser
 
         case type
         when 'm'
-          result[id] = _parse({}, _params, i+1, value.to_i)
+          result[id] = _parse({}, _params, i + 1, value.to_i)
           # Since it is added at the end of the loop, subtract 1 here.
-          i += value.to_i - 1
+          i += value.to_i
         else
           result[id] = {
             raw: param,
@@ -35,7 +35,6 @@ module GoogleMapPbParser
       else
         raise Error.new("parse error. param=#{param}")
       end
-
       i += 1
     end
 
