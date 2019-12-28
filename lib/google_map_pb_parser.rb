@@ -100,6 +100,7 @@ module GoogleMapPbParser
         case type
         when 'm'
           result.push({
+            id: id,
             raw: param,
             type: 'm',
             value: _parse([], _params, i + 1, value.to_i)
@@ -108,6 +109,7 @@ module GoogleMapPbParser
           i += value.to_i
         else
           result.push({
+            id: id,
             raw: param,
             type: type,
             value: value,
